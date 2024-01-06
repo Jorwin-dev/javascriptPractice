@@ -47,3 +47,43 @@
       document.getElementById("myH1").textContent = `Hello ${username}`;
    }
 */
+
+/* 4) Type Conversion:
+let age = window.prompt("How old are you?");
+age = Number(age);
+age++;
+console.log(age, typeof age);
+
+let x = "pizza";
+let y = "pizza";
+let z = "pizza";
+
+x = Number(x);
+y = String(y);
+z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
+*/
+
+/* 5) Constants:
+// Useful to prevent the changing of any variables that MUST be a concrete value.
+// DON'T use camelCase with const if they are a number or boolean, make the name fully Uppercase.
+const PI = 3.1415926;
+let radius;
+let circumference;
+
+document.getElementById("mySubmit").onclick = function(){
+   radius = document.getElementById("myText").value;
+   radius = Number(radius);
+   circumference = 2 * PI * radius;
+   document.getElementById("myH3").textContent = circumference + "cm";
+}
+
+<h1 id="myH1">Enter the radius of a circle:</h1>
+<label>radius:</label>
+<input type="text" id="myText"><br><br>
+<button id="mySubmit">submit</button>
+<h3 id="myH3"></h3>
+*/
